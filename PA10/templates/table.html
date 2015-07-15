@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Map</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Get Direction</h2>
+  <form role="form" method ="POST" action="\">
+    <div class="form-group">
+      <label for="email">Enter the Source:</label>
+      <input type="text" class="form-control" id="email" name="source" placeholder="Enter Source" style="width:250px">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Enter the Destination:</label>
+      <input type="text" class="form-control" id="pwd" name="dest" placeholder="Enter Destination" style="width:250px">
+    </div>
+    <div class="form-group">
+      <label for="sel1">Select Mode of Transport:</label>
+      <select class="form-control" id="sel1"  name ='mode' data-style="btn-info" style="width:250px">
+        <option>Driving</option>
+        <option>Bicycling</option>
+        <option>Walking</option>
+      </select>
+      </div>
+    <button type="submit" class="btn btn-default" formaction="/display">Search Direction</button>
+  </form>
+    </form>
+    </div>
+</body>
+</html>
