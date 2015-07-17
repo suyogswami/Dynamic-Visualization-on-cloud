@@ -28,7 +28,7 @@ def welcome():
         source = request.form.get('source')
         dest = request.form.get('dest')
         mode = request.form.get('mode').lower()
-        cli=googlemaps.Client(key="AIzaSyA-bQSF_FUO7kpuQTUviyUG5DbJicZpQe8")
+        cli=googlemaps.Client(key="")
         dir=cli.directions(source,dest,mode=mode,departure_time= datetime.now())
         #print(dir)
         dir_encoded = dir[0].get('overview_polyline').get('points')
